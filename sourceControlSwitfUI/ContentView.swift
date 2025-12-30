@@ -13,6 +13,7 @@ struct ContentView: View {
             Text("Hello, world!")
             Circle()
                 .frame(width: 100, height: 100)
+                .foregroundColor(Color.green)
         }
         .padding()
         
