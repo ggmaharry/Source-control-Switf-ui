@@ -15,6 +15,9 @@ struct gitTest: View {
         }, label: {
             Text("Git Test")
         })
+        Circle()
+            .frame(width: 100, height: 100)
+            .foregroundColor(Color.green)
     }
 }
 
