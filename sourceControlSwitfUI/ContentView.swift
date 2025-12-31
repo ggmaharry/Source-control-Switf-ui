@@ -10,19 +10,31 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Hello, world!")
-            Circle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(Color.green)
-            Button(action: {
-                
-            },
-                   label: {
+            ZStack {
                 Text("Hello, world!")
-                
-            })
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(Color.green)
+                Button(action: {
+                    
+                },
+                       label: {
+                    Text("Hello, world!")
+                    
+                })
+            }
+            .padding()
         }
-        .padding()
+        ZStack {
+            Rectangle()
+                .frame(width: 200, height: 200)
+                .foregroundColor(Color.yellow)
+            Text("Button")
+                .font(Font.largeTitle)
+                .bold(true)
+                .shadow(radius: 10)
+                .foregroundColor(Color.black.opacity(0.5))
+        }
         
     }
 }
