@@ -18,6 +18,11 @@ struct gitTest: View {
         Circle()
             .frame(width: 100, height: 100)
             .foregroundColor(Color.green)
+        Rectangle()
+            .frame(width: 100, height: 100)
+            .foregroundColor(Color.red)
+            .padding()
+        
     }
 }
 
