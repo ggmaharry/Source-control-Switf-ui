@@ -14,10 +14,19 @@ struct buttonDataGit: View {
                 .frame(width: 200, height: 200)
                 .foregroundColor(Color.yellow)
                 //.edgesIgnoringSafeArea(<#T##edges: Edge.Set##Edge.Set#>)
-            Text("Button")
-                .font(Font.largeTitle)
-                .bold(true)
-                .shadow(radius: 10)
+            VStack {
+                Text("Button")
+                    .font(Font.largeTitle)
+                    .bold(true)
+                    .shadow(radius: 10)
+                    .foregroundColor(Color.black.opacity(0.5))
+                
+                Text("Slash")
+                    .font(Font.largeTitle)
+                    .bold(true)
+                    .shadow(radius: 10)
+            }
+            
         }
     }
 }
